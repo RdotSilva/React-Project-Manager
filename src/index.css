@@ -10,7 +10,8 @@
   color: #424242;
 
   margin-left: 100px;
-  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .headerContainer {
@@ -31,10 +32,11 @@
   width: 60px;
   height: 60px;
   left: 1600px;
-  top: 107px;
+  top: 150px;
 }
 
 .projectContainer {
   border-top: 1px solid;
   border-bottom: 1px solid;
+  max-width: 1000px;
 }

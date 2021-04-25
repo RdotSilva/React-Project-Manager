@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Button } from "antd";
+import { Row, Col, Button, Divider } from "antd";
 import beaver from "../assets/beaver.png";
 import plus from "../assets/plus.png";
 import { v4 as uuidv4 } from "uuid";
@@ -36,22 +36,26 @@ const HomeScreen = () => {
 
   return (
     <>
-      <Row className="headerContainer">
-        <Row className="beaverIconContainer">
+      <Row>
+        <Col className="beaverIconContainer">
           <img className="beaverIcon" src={beaver}></img>
-        </Row>
-        <Col className="myProjectsText">My Projects</Col>
+        </Col>
         <img className="plusImage" src={plus}></img>
       </Row>
-      <Row>
+      <Row className="myProjectsText">My Projects</Row>
+      <Divider />
+      <Col offset={9}>
         <input value={projectInput} onChange={handleInputChange}></input>
         <Button onClick={handleOnClick}>Add Project</Button>
-      </Row>
-      {projectList.length > 0 ? (
-        <ProjectList projectList={projectList} />
-      ) : (
-        <div>No Projects To Show</div>
-      )}
+      </Col>
+      <Col offset={6}>
+        {" "}
+        {projectList.length > 0 ? (
+          <ProjectList projectList={projectList} />
+        ) : (
+          <div>No Projects To Show</div>
+        )}
+      </Col>
     </>
   );
 };
