@@ -1,7 +1,12 @@
-import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomeScreen from "./Screens/HomeScreen";
 
 function App() {
-  return <h1>Project Manager</h1>;
+  return (
+    <Router>
+      <Route path="/" component={HomeScreen} />
+    </Router>
+  );
 }
 
 export default App;
