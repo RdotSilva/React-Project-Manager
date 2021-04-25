@@ -39,8 +39,23 @@ I would tackle the project.
 
 After initial research and design I created the repo and bootstrapped a project using create-react-app. I decided to mimic the Gitflow workflow for this project and created feature branches for each individual feature I wanted to create. After each feature was built I merged my code into main and started on another feature branch. For my commit style I like to make clear and frequent commits to keep a clean history of my code so I can refer back if needed.
 
-I have broken the code up into screens and components. Screens are the main pages that a user will visit and I render my components inside of the screens. I've added JSDoc comments to document components and added additional inline comments as necessary. 
+I have broken the code up into screens and components. Screens are the main pages that a user will visit and I render my components inside of the screens. I've added JSDoc comments to document components and added additional inline comments as necessary.
 
-I was not able to complete all of the main features that were requested. However, I feel that I have demonstrated my ability to write clean and re-usable React components as well as an understanding for Front End development. I spent a lot of time with the design and trying to integrate Ant Design. If I had to do it again, I would have started with all of the logic for the main features, and then focused on the design. 
+I was not able to complete all of the main features that were requested. However, I feel that I have demonstrated my ability to write clean and re-usable React components as well as an understanding for Front End development. I spent a lot of time with the design and trying to integrate Ant Design. If I had to do it again, I would have started with all of the logic for the main features, and then focused on the design.
 
-In conclusion, this was a really fun and challenging exercise. I enjoyed working through the problem and applying my skills, and I was even able to pick up a few new tools/technologies. 
+In conclusion, this was a really fun and challenging exercise. I enjoyed working through the problem and applying my skills, and I was even able to pick up a few new tools/technologies.
+
+## TODO Features/Bugs
+
+These are features or ideas that can be added or tweaked in the future.
+
+1. Edit Project Feature
+
+   - Add the ability to edit a project name
+
+2. Fix Delete Project Feature
+
+   - Look into the delete project feature, there is a bug when removing the project from the project list
+
+3. Clean Up Design
+   - Clean up the design and make it look more like the mocks that were provided
