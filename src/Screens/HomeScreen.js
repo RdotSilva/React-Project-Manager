@@ -34,6 +34,17 @@ const HomeScreen = () => {
     setProjectList([project, ...projectList]);
   };
 
+  /**
+   * Remove a project from the list of projects
+   */
+  const removeProjectHandler = (projectId) => {
+    const updatedProjectList = projectList.filter(
+      (project) => project.id === projectId
+    );
+
+    setProjectList(updatedProjectList);
+  };
+
   return (
     <>
       <Row>
@@ -51,7 +62,10 @@ const HomeScreen = () => {
       <Col offset={6}>
         {" "}
         {projectList.length > 0 ? (
-          <ProjectList projectList={projectList} />
+          <ProjectList
+            projectList={projectList}
+            removeProject={removeProjectHandler}
+          />
         ) : (
           <div>No Projects To Show</div>
         )}
