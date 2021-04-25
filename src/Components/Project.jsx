@@ -7,12 +7,13 @@ import beaver from "../assets/beaver.png";
 /**
  * Renders a project including name and time of creation
  */
-const Project = ({ project }) => {
+const Project = ({ project, removeProject }) => {
   /**
    * Delete a project from the project list
    */
-  const deleteProjectHandler = () => {
-    //TODO: Implement project delete logic
+  const deleteProjectHandler = (projectId) => {
+    removeProject(projectId);
+    // TODO: Fix this handler
   };
 
   /**
@@ -36,7 +37,11 @@ const Project = ({ project }) => {
         </Col>
         <Col span={3}>{moment(project.createdAt).format("LLL")}</Col>
         <Col span={3}>
-          <DeleteOutlined onClick={deleteProjectHandler} />
+          <DeleteOutlined
+            onClick={() => {
+              deleteProjectHandler(project.id);
+            }}
+          />
         </Col>
       </Row>
     </>
