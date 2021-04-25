@@ -1,0 +1,35 @@
+.myProjectsText {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+
+  letter-spacing: 0.8px;
+
+  color: #424242;
+
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.headerContainer {
+  border-bottom: solid 1px;
+}
+
+.beaverIconContainer {
+  margin-left: 80px;
+}
+
+.plusContainer {
+  position: relative;
+  border: 1px solid #000;
+}
+
+.plusImage {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 1600px;
+  top: 107px;
+}
