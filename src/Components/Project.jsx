@@ -1,9 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
+import moment from "moment";
 import beaver from "../assets/beaver.png";
-
-// TODO: Remove mock values and use props to populate the project properties
 
 const Project = ({ project }) => {
   return (
@@ -13,12 +12,12 @@ const Project = ({ project }) => {
           <img src={beaver}></img>
         </Col>
         <Col span={3}>
-          <div>Project Name</div>
+          <div>{project.name}</div>
         </Col>
         <Col span={3}>
           <EditOutlined />
         </Col>
-        <Col span={3}>Time Date</Col>
+        <Col span={3}>{moment(project.createdAt).format("LLL")}</Col>
         <Col span={3}>
           <DeleteOutlined />
         </Col>
