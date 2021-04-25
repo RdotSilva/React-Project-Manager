@@ -3,6 +3,8 @@ import { Row, Col } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import beaver from "../assets/beaver.png";
 
+// TODO: Remove mock values and use props to populate the project properties
+
 const Project = ({ project }) => {
   return (
     <>
